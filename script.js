@@ -5,16 +5,22 @@ let clicks = 0;
 
 
 // Variable to store the click dispkay element
-let clickDisplay = document.getElementById("click-display")
+let clickDisplay = document.getElementById("click-display");
 
 //set the initial of click display
-clickDisplay.InnerText = "Clicks: " + clicks;
+clickDisplay.innerText = "Clicks: " + clicks;
 
 function handleClick() {
     console.log("click");
 
-    clicks = Clicks + 1;
+    clicks = clicks + 1;
 
     //update display with new value
-    clickDisplay.I6nnerText = "Clicks: " + clicks
+    clickDisplay.innerText = "Clicks: " + clicks;
+
+    if (clicks == 10) {
+
+        alert("level 2");
+    }
+
 }
